@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical AI Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+
+        <header>
+            <div class="logo">✚</div>
+            <div>
+                <h1>Medical AI Assistant</h1>
+                <p>Your medical appointment helper</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="welcome">
+                <h2>Hello! 👋</h2>
+                <p>How can I help you today?</p>
+            </section>
+
+            <!-- JavaScript generates new questions here -->
+            <section class="suggestions">
+                <p class="suggestion-title">You can ask me:</p>
+                <div id="suggestion-list"></div>
+            </section>
+
+            <div id="messages" class="messages"></div>
+
+            <form id="chat-form">
+                <input
+                    id="question"
+                    type="text"
+                    placeholder="Ask about doctors or appointments..."
+                    autocomplete="off"
+                    required
+                >
+                <button id="send-button" type="submit">Send ➤</button>
+            </form>
+
+            <p id="status"></p>
+
+            <footer>
+                For appointment information only. Not for medical emergencies.
+            </footer>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
